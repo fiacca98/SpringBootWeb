@@ -61,10 +61,7 @@ public class SimpleController {
     @RequestMapping(path = "/utente/{nome}",method = RequestMethod.PUT,produces = "application/json")
     @ResponseBody
     public Utente insertUtente(@PathVariable("nome") String nome){
-        Utente result = new Utente();
-        result.setId(1);
-        result.setName(nome);
-        return result;
+
     }
 
     @RequestMapping(path = "/utente/{id}",method = RequestMethod.DELETE,produces = "application/json")
